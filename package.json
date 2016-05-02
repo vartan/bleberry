@@ -22,6 +22,7 @@
   "homepage": "https://github.com/vartan/bleberry#readme",
   "dependencies": {
     "bleno": "^0.4.0",
+    "keymirror": "^0.1.1",
     "knockout": "^3.4.0"
   }
 }
