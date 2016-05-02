@@ -1,7 +1,7 @@
 "use strict";
 var bleno = require('bleno');
 var BlenoPrimaryService = bleno.PrimaryService;
-var IfaceCharacteristic = require('./iface');
+var IfaceCharacteristic = require('./iface-characteristic');
 var CounterCharacteristic = require('./counter-characteristic');
 
 
@@ -27,7 +27,8 @@ bleno.on('advertisingStart', function(error) {
         uuid: 'ec00',
         characteristics: [
           new CounterCharacteristic({uuid: "1"}),
-          new IfaceCharacteristic({name:"wlan0",uuid:"2"})
+          new IfaceCharacteristic({name:"wlan0",uuid:"2"}),
+          new IfaceCharacteristic({name:"en0",uuid:"3"})
         ]
       })
     ]);
